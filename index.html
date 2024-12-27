@@ -12,10 +12,26 @@
         background: black;
     }
 
-    .logo-h1{
-        margin: -2% 6%;
-        color: rgb(236, 208, 137);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    .logo{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .br{
+        border-radius: 50% 50% 50% 50%;
+        border-bottom: 5px inset goldenrod;
+        animation: b 3s linear infinite;
+    }
+
+    @keyframes b {
+        from{
+            filter: hue-rotate(360deg);
+        }
+        to{
+            filter: hue-rotate(0deg);
+        }
     }
 
 
@@ -46,6 +62,9 @@
     }
 
 
+    ul{
+        text-align: center;
+    }
 
     a{
         position: relative;
@@ -95,8 +114,9 @@
 <body>
     <div class="logo">
         <img class="logo-img" src="TLY24 png.png" alt="" width="150px">
-        <h1 class="logo-h1">TLY24</h1>
     </div>
+    <br>
+    <div class="br"></div>
     <ul>
         <a href="https://www.geckoterminal.com/bsc/pools/0xa0fe88f37440d674c48a584a364d45db17ee447d">Geckoterminal</a>
         <a href="https://apespace.io/bsc/0x86d29104ea2c78cb124443dd21a664c712525c13">Apespace</a>
